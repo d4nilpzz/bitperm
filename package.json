@@ -1,0 +1,28 @@
+{
+  "name": "bitperm",
+  "version": "1.0.0",
+  "description": "Lightweight bitwise permission manager for Node.js and Express. Simple, fast, and fully typed.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "keywords": [
+    "permissions",
+    "bitmask",
+    "express",
+    "typescript",
+    "auth"
+  ],
+  "author": "d4nilpzz",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^5.0.4",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
