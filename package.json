@@ -1,6 +1,6 @@
 {
   "name": "bitperm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight bitwise permission manager for Node.js and Express. Simple, fast, and fully typed.",
   "type": "module",
   "main": "./dist/index.js",
