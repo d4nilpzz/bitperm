@@ -4,4 +4,5 @@ export declare class BitPerm {
     static add(perms: number, add: number): number;
     static remove(perms: number, rem: number): number;
     static list(perms: number, all: Record<string, number>): string[];
+    static fromNames(names: string[], all: Record<string, number>): number;
 }
