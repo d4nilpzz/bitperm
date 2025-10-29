@@ -4,6 +4,7 @@ export class BitPerm {
   }
 
   static has(perms: number, check: number): boolean {
+    if (typeof perms !== "number" || typeof check !== "number") return false;
     return (perms & check) === check;
   }
 
@@ -19,5 +20,9 @@ export class BitPerm {
     return Object.entries(all)
       .filter(([_, val]) => (perms & val) === val)
       .map(([key]) => key);
+  }
+
+  static fromNames(names: string[], all: Record<string, number>): number {
+    return names.reduce((acc, name) => acc | (all[name] ?? 0), 0);
   }
 }
